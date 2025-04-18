@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | Adams Web Studio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    .services-intro {
+      text-align: center;
+      padding: 3rem 1rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .scroll-cards {
+      display: flex;
+      overflow-x: auto;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+      scroll-snap-type: x mandatory;
+    }
+
+    .service-card {
+      flex: 0 0 300px;
+      scroll-snap-align: start;
+      background: var(--card);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: transform 0.3s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .service-card p {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .service-card .btn {
+      margin-top: 1rem;
+      align-self: flex-start;
+    }
+
+    .scroll-cards::-webkit-scrollbar {
+      display: none;
+    }
+
+    .scroll-wrapper {
+      overflow: hidden;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<div class="navbar-container">
+  <div class="logo">Adams Web Studio</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <div class="services-intro">
+        <h1>Our Services</h1>
+        <p>Clean, functional websites tailored to your brand. Everything you need — nothing you don’t.</p>
+      </div>
+
+      <div class="scroll-wrapper">
+        <div class="scroll-cards">
+          <div class="service-card">
+            <h3>Starter Site</h3>
+            <p>Ideal for portfolios and small businesses. Includes Home, About, Services, and Contact pages.</p>
+            <p><strong>$150 • 3–5 days</strong></p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+
+          <div class="service-card">
+            <h3>E-Commerce Build</h3>
+            <p>Online storefront with product pages and Stripe/Square checkout. Sleek design with no Shopify fees.</p>
+            <p><strong>$250 • 5–7 days</strong></p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Booking Site</h3>
+            <p>For hairstylists, nail techs, and barbers. Connects to Square or Calendly. Includes availability + contact.</p>
+            <p><strong>$200 • 4–6 days</strong></p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Resume Portfolio</h3>
+            <p>A 1-page scroll site built from your resume — mobile-friendly and link-ready. Great for job hunting.</p>
+            <p><strong>$25 • 2–3 days</strong></p>
+            <a href="contact.html" class="btn">Book Now</a>
+          </div>
+
+          <div class="service-card">
+            <h3>Custom Project</h3>
+            <p>Need something totally unique? Let’s talk. We’ll build out your vision from scratch.</p>
+            <p><strong>Starting at $300</strong></p>
+            <a href="contact.html" class="btn">Get Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <h2>Not sure what you need?</h2>
+        <a href="contact.html" class="btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Theme Toggle -->
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Adams Web Studio. Designed by Zoe Adams.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Adams Web Studio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .about-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .founder-photo {
+      width: 250px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .bio-text {
+      flex: 1;
+      min-width: 280px;
+      max-width: 600px;
+    }
+
+    .photo-wrapper {
+      text-align: center;
+    }
+
+    .photo-wrapper h3 {
+      margin-top: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .about-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .bio-text {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<div class="navbar-container">
+  <div class="logo">Adams Web Studio</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h1>About Adams Web Studio</h1>
+      <p>Adams Web Studio is your go-to for clean, impactful websites that actually convert. We specialize in helping small businesses, creatives, and entrepreneurs stand out with beautiful design and practical features.</p>
+
+      <div class="about-flex" style="margin-top: 3rem;">
+        <!-- Headshot + Name -->
+        <div class="photo-wrapper">
+          <img src="images/zoe-adams.jpg" alt="Zoe Adams Headshot" class="founder-photo" />
+          <h3>Zoe Adams</h3>
+        </div>
+
+        <!-- Bio -->
+        <div class="bio-text">
+          <p>Zoe is a web designer and developer who blends technical skill with creative strategy. With a background in Computer Information Systems and years of hands-on design experience, she’s built websites for brands across industries — from fashion and food to barbers and booking platforms.</p>
+
+          <p>What sets Zoe apart? She listens, she gets the vibe, and she delivers polished work — fast. Her mission with Adams Web Studio is simple: help others win online with zero fluff, zero bloat, and zero monthly website fees.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Adams Web Studio. Designed by Zoe Adams.</p>
+  </footer>
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+</body>
+</html>

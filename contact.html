@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Adams Web Studio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+<div class="navbar-container">
+  <div class="logo">Adams Web Studio</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <h1>Let’s Work Together</h1>
+      <p>Have a project in mind? Fill out the form or reach out directly. We’ll get back to you within 24–48 hours.</p>
+
+      <form action="https://formspree.io/f/xqapvdvr" method="POST" class="contact-form">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="_replyto" id="email" placeholder="you@example.com" required />
+
+        <label for="message">Your Message</label>
+        <textarea name="message" id="message" rows="6" placeholder="Tell us what you're looking for..." required></textarea>
+
+        <input type="hidden" name="_next" value="thankyou.html" />
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+
+      <div class="direct-contact">
+        <p><strong>Email us:</strong> <a href="mailto:adamswebstudio2025@gmail.com">adamswebstudio2025@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Adams Web Studio. Designed by Zoe Adams.</p>
+  </footer>
+<button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+</body>
+</html>

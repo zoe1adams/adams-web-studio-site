@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Careers | Adams Web Studio</title>
+  <link rel="stylesheet" href="styles/main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .job-listing {
+      background: var(--card);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .job-listing h2 {
+      margin-bottom: 0.5rem;
+    }
+
+    .job-meta {
+      font-size: 0.95rem;
+      color: gray;
+      margin-bottom: 1rem;
+    }
+
+    .job-listing ul {
+      padding-left: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .job-listing ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    .application-process ol {
+      padding-left: 1.2rem;
+      margin: 1rem 0;
+    }
+
+    .application-process ol li {
+      margin-bottom: 0.5rem;
+    }
+
+    .job-listing a {
+      color: var(--accent);
+      font-weight: 500;
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 0.9rem;
+      color: gray;
+      margin-top: 2rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+<div class="navbar-container">
+  <div class="logo">Adams Web Studio</div>
+  <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="careers.html">Careers</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</div>
+
+
+  <!-- Careers Section -->
+  <section class="careers">
+    <div class="container">
+      <h1 style="text-align: center;">Careers at Adams Web Studio</h1>
+      <p style="text-align: center; max-width: 700px; margin: 1rem auto;">
+        Join a growing digital studio committed to helping small brands look professional online. We're currently hiring for the following roles:
+      </p>
+
+      <!-- Job 1 -->
+      <div class="job-listing">
+        <h2>📞 Cold Caller / Sales Assistant</h2>
+        <div class="job-meta"> Commision Based • Remote • Part-time</div>
+        <p>Reach out to small business leads and pitch our web design services using a pre-written script and lead list.</p>
+
+        <h4>Responsibilities:</h4>
+        <ul>
+          <li>Call small businesses and speak with owners or managers</li>
+          <li>Follow a provided script and log responses</li>
+          <li>Track call outcomes in a spreadsheet</li>
+        </ul>
+
+        <h4>Ideal Candidate:</h4>
+        <ul>
+          <li>Clear and confident on the phone</li>
+          <li>Organized and self-motivated</li>
+          <li>No prior experience required</li>
+        </ul>
+
+        <div class="application-process">
+          <h4>How to Apply:</h4>
+          <ol>
+            <li>Upload a 30–60 second unlisted YouTube video introducing yourself.</li>
+            <li>Download and follow our application instructions: <a href="assets/Application_Instructions.pdf" download>Download PDF</a></li>
+            <li>Email your video link to <a href="mailto:adamswebstudio@gmail.com">adamswebstudio@gmail.com</a></li>
+          </ol>
+        </div>
+      </div>
+
+
+
+      <p class="note">Applications are reviewed within 3–5 business days. We appreciate your interest in working with us!</p>
+    </div>
+  </section>
+
+  <!-- Theme Toggle -->
+  <button class="toggle-theme" onclick="toggleTheme()">Toggle Theme</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Adams Web Studio. Designed by Zoe Adams.</p>
+  </footer>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
